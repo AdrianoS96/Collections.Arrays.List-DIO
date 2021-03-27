@@ -9,8 +9,13 @@ fun main() {
     }
 
     println("-------------")
+    /**
+     * Métodos depreciados para as versões mais novas
     println("Maior salário: ${salarios.max()}")
     println("Menor salário: ${salarios.min()}")
+    **/
+    println("Maior salário: ${salarios.maxOrNull()}")
+    println("Maior salário: ${salarios.minOrNull()}")
     println("Média salarial: ${salarios.average()}")
 
     println("-------------")
