@@ -12,6 +12,11 @@ fun main() {
 
     println(funcionarios.find{it.nome == "Maria"})
 
+    println("---------------------")
+
+    funcionarios.sortedBy { it.salario }//organiza os elementos com base no item escolhido
+        .forEach{println(it)}
+
 }
 
 
